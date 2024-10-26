@@ -1,0 +1,19 @@
+<header class="bg-light">
+  <nav class="max-w-full px-8">
+    <div class="flex justify-between items-center h-16">
+      <a href="/" class="text-2xl font-bold text-dark shadow hover:text-primary">RecordPurposes</a>
+      
+      <div class="hidden md:flex space-x-8">
+        <a href="/resources" class="<%= resource.relative_url == "/resources" ? "text-primary" : "text-dark hover:text-secondary" %>">
+          Resources
+        </a>
+        <a href="/writing" class="<%= resource.relative_url == "/writing" ? "text-primary" : "text-dark hover:text-secondary" %>">
+          Writing
+        </a>
+        <a href="/contact" class="<%= resource.relative_url == "/contact" ? "text-primary" : "text-dark hover:text-secondary" %>">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
